@@ -1,0 +1,218 @@
+#booking .booking_content .booking{
+   display: flex;
+   flex-direction: column;
+   height: 300px;
+   justify-content: space-between;
+   padding: 30px;
+   border-radius: 10px;
+   width: 100%;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#booking .booking_content{
+    width: 48%;
+}
+
+#booking .booking_content .intro_desc{
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#booking{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#booking .booking .master{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#booking .booking .master a{
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: orange;
+}
+
+#booking .intro_image{
+    width: 48%;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#booking .intro_image img{
+    width: 100%;
+}
+
+
+#booking .timetable{
+    width: 100%;
+    height: 400px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow: scroll;
+    position: relative;
+    padding: 20px 100px 0 0;
+}
+
+#booking .timetable::-webkit-scrollbar{
+    display: none;
+}
+
+#booking .year_month{
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#booking .year_month{
+    position: absolute;
+    width: 150px;
+    right: 0px;
+}
+
+#booking .days li{
+    width: 50px;
+    text-align: center;
+}
+
+#booking .days{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#booking .days li{
+    display: inline-block;
+    width: 100px;
+}
+
+#booking .date_days{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#booking .date_day{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#booking .date_day:hover{
+    background-color: grey;
+}
+
+.calendar{
+    position: absolute;
+    width: 60%;
+    left: 0;
+    top: calc(50vh - 200px);
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 10;
+    display: none;
+}
+
+#booking .calendar .hr{
+    margin-bottom: 20px;
+}
+
+.visible{
+    display: block!important;
+}
+
+
+
+#timings input{
+    display: none;
+}
+
+#timings p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#timings{
+    width: 40%;
+    position: absolute;
+    height: 400px;
+    right: 0;
+    top: calc(50vh - 200px);
+    text-align: center;
+    padding-top: 20px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 10;
+    display: none;
+}
+
+#timings .select_form{
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 40px;
+}
+
+
+#timings .select_form option{
+    padding: 30px;
+}
+
+#timings .inputs {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#timings .owner_name {
+    display: block!important;
+    margin: 10px auto;
+}
+
+#timings div p{
+    padding-top: 10px;
+}
+
+#timings .owner_name{
+    width: 200px;
+    height: 40px;
+    border: 2px solid orange;
+}
+
+.calendar img{
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+}
+
+.calendar .close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+#timings button{
+    width: 100px;
+    height: 40px;
+    border: 2px solid orange;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.none_visible{
+    display: none!important;
+}

@@ -1,0 +1,63 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'main/css/index.css'%} ">
+{% endblock %}
+{% block content %}
+    <main>
+        <div class="container">
+            <section id="booking">
+                <div class="booking_content">
+                    <div class="booking">
+                         {% for master in all_masters %}
+                             <div class="master">
+                                 <h4>{{ master.name }}</h4>
+                                 <a href="#" id="{{master.name}}">Book an appointment</a>
+                             </div>
+                         {% endfor %}
+                    </div>
+                    <div class="calendar">
+                        <div class="close"><img src="{% static 'main/img/icons/plus.png' %}" alt="img"></div>
+                        <div class="timetable">
+
+                            <ul class="days">
+                                <li class="day">Monday</li>
+                                <li class="day">Tuesday</li>
+                                <li class="day">Wednesday</li>
+                                <li class="day">Thursday</li>
+                                <li class="day">Friday</li>
+                                <li class="day">Saturday</li>
+                                <li class="day">Sunday</li>
+                            </ul>
+                            {% for k,v in final_data.items %}
+                                 <div class="year_month">
+                                    {{k}}
+                                 </div>
+                                 <hr class="hr">
+                                    {% for a in v %}
+                                     <a href="#" id="{{k}}-{{a}}" class="date_day">{{ a|slice:"0:2" }}</a>
+                                    {% endfor %}
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <form action="{% url 'main:main' %}" id="timings" method="POST">
+                        {% csrf_token %}
+
+                        <div class="form">
+
+                        </div>
+                        <select name="select_time" class="select_form">
+
+                        </select>
+                        <button type='submit' class="book_btn">Book</button>
+                    </form>
+                    <p class="intro_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto at eius eos ipsam praesentium qui quibusdam suscipit, velit veniam! Beatae blanditiis deserunt, exercitationem labore non porro possimus quos tempore.</p>
+                </div>
+                <div class="intro_image">
+                    <img src="{% static 'main/img/stretching.jpg' %}" alt="img">
+                </div>
+            </section>
+        </div>
+    </main>
+{% endblock %}
