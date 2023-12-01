@@ -56,7 +56,7 @@ def main(request):
         date_ = str(datetime(today.year, today.month, today.day))
         date_ = date_[0:date_.find(' ')].split('-')
         all_weeks = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-        d1 = date(int(date_[0]), int(date_[1]), int(date_[2]) - today.weekday())
+        d1 = date(int(date_[0]), int(date_[1]), int(date_[2]))
         d2 = date(int(date_[0]) + 1, int(date_[1]), int(date_[2]))
         delta = d2 - d1  # returns timedelta
         final_data = {}
@@ -66,7 +66,8 @@ def main(request):
             master_time = [i.split(',') for i in master.timetable.split(";")]
             timings[master_name] = master_time
         data_dynamic = []
-
+        for _ in range(today.weekday()):
+            data_dynamic.append(f'  -{all_weeks[today.weekday()].split("-")[0]}-{timings}')
         all_months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
                       'November', 'December']
         for i in range(delta.days + 1):
