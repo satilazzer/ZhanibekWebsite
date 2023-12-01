@@ -1,4 +1,5 @@
 let header = document.querySelector('#header');
+let header_navbar = document.querySelector('.navbar')
 let bottom_header = document.querySelector('.bottom_header');
 let burger = document.querySelector('.header_burger');
 let masters = document.querySelectorAll('.master a');
@@ -9,6 +10,7 @@ let close = document.querySelector('.calendar .close');
 form_ = document.querySelector('#timings .form');
 select_form = document.querySelector('.select_form');
 book_btn = document.querySelector('.book_btn');
+
 burger.addEventListener('click', function(){
     bottom_header.classList.toggle('bottom_header_burger');
     header_navbar.classList.toggle('nav_list_burger');

@@ -9,12 +9,26 @@
 
 a{
     text-decoration: none;
+    color: #000;
 }
+
+
 
 li{
     list-style: none;
 }
 
+h4{
+    font-size: 18px;
+}
+
+ol, ul{
+    padding: 0;
+}
+
+hr{
+    margin: 0;
+}
 *{
     margin: 0;
     padding: 0;
@@ -142,6 +156,10 @@ a{
     display: none;
 }
 
+.appointments_media{
+    display: none;
+}
+
 .list_item{
     text-align: center;
 }
@@ -225,6 +243,18 @@ footer .footer_list{
 
 
 @media only screen and (max-width: 790px){
+    .appointments_media{
+        display: block;
+    }
+    .appointments{
+        display: none!important;
+    }
+    .phone_number_media{
+        display: block;
+    }
+    .phone_number{
+        display: none!important;
+    }
     .top_header h1{
         font-size: 18px!important;
         width: 150px;
@@ -241,10 +271,9 @@ footer .footer_list{
     .nav_list{
         display: block!important;
     }
-    .phone_number_media{
-        display: block;
-    }
-    .phone_number{
-        display: none;
-    }
+
+}
+
+@media only screen and (max-width: 970px){
+
 }

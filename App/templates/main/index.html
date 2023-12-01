@@ -12,7 +12,7 @@
                          {% for master in all_masters %}
                              <div class="master">
                                  <h4>{{ master.name }}</h4>
-                                 <a href="#" id="{{master.name}}">Book an appointment</a>
+                                 <a href="#" id="{{master.name}}">Book a class</a>
                              </div>
                          {% endfor %}
                     </div>
@@ -52,10 +52,117 @@
                         </select>
                         <button type='submit' class="book_btn">Book</button>
                     </form>
-                    <p class="intro_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto at eius eos ipsam praesentium qui quibusdam suscipit, velit veniam! Beatae blanditiis deserunt, exercitationem labore non porro possimus quos tempore.</p>
+                    <p class="intro_desc">Step into Serene Steps Yoga and embark on a journey to tranquility. Our studio is not just a place for yoga; it's a space where you can find balance, connect with your breath, and cultivate a sense of inner peace. Join us and discover why Serene Steps Yoga is more than just a class; it's a path to a healthier, more serene way of life.</p>
                 </div>
                 <div class="intro_image">
                     <img src="{% static 'main/img/stretching.jpg' %}" alt="img">
+                </div>
+            </section>
+            <section id="section2">
+                <div class="container">
+                    <div class="about_us">
+                        <div class="about_us_text">
+                            <h2>About us</h2>
+                            <p class = "main_text">Welcome to Serene Steps Yoga, a sanctuary in the heart of Dubai where the transformative power of yoga unfolds. Rooted in the belief that yoga is more than just a physical practice, we are committed to fostering a holistic approach to wellness. Our philosophy centres around the integration of breath, movement, and mindfulness, guiding our students on a journey to harmonize mind, body, and spirit.
+At Serene Steps Yoga our team of dedicated instructors is the heartbeat of our community.Discover the joy of yoga and unlock the potential for a healthier, more balanced life. We look forward to being part of your yoga journey at Serene Steps Yoga.</p>
+                        </div>
+                        <div class="about_us_carousel">
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://images.squarespace-cdn.com/content/v1/53691b92e4b0cccc5fa97bdb/fe16afba-809e-4136-a4f0-e27daf225b7e/stretching.jpg" class="d-block w-100" alt="img">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="https://www.shape.com/thmb/ls28gdtp4-wR5w__85zsxCG8Emc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6-Stretches-You-Should-Try-Doing-88a7ab6ef83e493f9b74770d15913c41.jpg" class="d-block w-100" alt="img">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section3">
+                <div class="container">
+                    <div class='map_details'>
+                        <div class="map">
+                            <h3>Location</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.671119122872!2d55.13544417537793!3d25.07913377778725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b85a7a78d2f%3A0x154e4958aa77d693!2sYoga%20House%20-%20Intercontinental%20Marina!5e0!3m2!1sen!2sae!4v1701437126407!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section4">
+                <div class="container">
+                    <div class="outerdiv">
+
+                        <div class="innerdiv">
+                          <!-- div1 -->
+                          <div class="div1 eachdiv">
+                            <div class="userdetails">
+                              <div class="detbox">
+                                <p class="name">Faranak h_n</p>
+                              </div>
+                            </div>
+                            <div class="review">
+                            <p>“ mostly I carry my bags with the right hand so my shoulders were so tired and there was no balance one of them was down also when i was trying to stand straight my back was tired so i tried their service and it was helpful.”</p>
+                            </div>
+                          </div>
+                          <!-- div2 -->
+                          <div class="div2 eachdiv">
+                            <div class="userdetails">
+                              <div class="detbox">
+                                <p class="name">Sally Elazab</p>
+                              </div>
+                            </div>
+                            <div class="review">
+                            <p>“Amazing place, new and different experience, changes happens from first session. I loved their staff, so friendly and professional.”</p>
+                            </div>
+                          </div>
+                          <!-- div3 -->
+                          <div class="div3 eachdiv">
+                            <div class="userdetails">
+                              <div class="detbox">
+                                <p class="name dark">Ralph Boyz</p>
+                              </div>
+                            </div>
+                            <div class="review dark">
+                              <p>“ I’ve been struggling with my face muscles since I had Bell’s Palsy a few years ago. I decided to try out the face massage they have it and it was amazing. I’ll need more sessions to fully recover, but I really enjoyed the results. Also the day after my skin was super tight and my face macules was super pumped, it feel like a face lift. The Dr is very knowledgeable and in definitely coming back. ”</p>
+                            </div>
+                          </div>
+                          <!-- div4 -->
+                          <div class="div4 eachdiv">
+                            <div class="userdetails">
+                              <div class="detbox">
+                                <p class="name dark">Lena Sami</p>
+                              </div>
+                            </div>
+                            <div class="review dark">
+                            <p>“ Loved my appointment with this clinic, they really worked on my posture and gave me a lot of advice on how to fix it ”</p>
+                            </div>
+                          </div>
+                          <!-- div5 -->
+                          <div class="div5 eachdiv">
+                            <div class="userdetails">
+                              <div class="detbox">
+                                <p class="name">Nisreen Sherbatji</p>
+                              </div>
+                            </div>
+                            <div class="review">
+                            <p>“ It was an amazing experience
+                                They heal the body in a comfortable way
+                                I love it and i will come back to them 😍♥️ ”</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
