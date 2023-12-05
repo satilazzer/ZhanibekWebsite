@@ -120,3 +120,11 @@ def delete_appointment(request, appointment_id):
     del request.session['appointments'][a[0]]
     appointments = request.session['appointments']
     return render(request, 'main/appointments.html', {'appointments': appointments})
+
+
+def ia(request):
+    if request.method == 'GET':
+        return render(request, 'main/ia.html', {})
+    else:
+        
+        return render(request, 'main/ia.html', {})
